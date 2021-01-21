@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(left, #a9aab1, #7d798f);
+    font-family: sans-serif;
+}
+
+input, button{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.cont{
+    overflow: hidden;
+    position: relative;
+    width: 900px;
+    height: 550px;
+    background: #fff;
+}
+
+.form{
+    position: relative;
+    width: 640px;
+    height: 100px;
+    padding: 50px 30px;
+    -webkit-transition:-webkit-transform 1.2s ease-in-out;
+    transition: -webkit-transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+}
+
+h2{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    width: 260px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+label span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #505f75;
+    text-transform: uppercase;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(109, 93, 93, 0.4);
+    font-family: sans-serif;
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    height: 36px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.submit{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: sans-serif;
+    background: -webkit-linear-gradient(left, #a9aab1, #7d798f);
+}
+
+.submit:hover{
+    background: -webkit-linear-gradient(left, #7d798f, #a9aab1);
+}
+
+.social-media{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media, ul{
+    list-style: none;
+}
+
+.social-media, ul, li{
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px 20px;
+}
+
+.social-media, img{
+    width: 40px;
+    height: 40px;
+    margin-left: 230px;
+}
+
+.login-gmail{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #505f75;
+}
+
+.img{
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+    left: 50;
+    top: 0;
+    width: 390px;
+    height: 100%;
+    padding-top: 360px;
+    margin-left: 500px;
+}
+
+.img:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 500px;
+    height: 100%;
+    background-image: url(images/Shani.jpg);
+    background-size: cover;
+    transition: -webkit-transform 1.2s ease-in-out;
+}
+
+.loggedin-div button:hover{
+    background: #fff;
+    color: #5d8ffc;
+    border: 1px solid #5d8ffc;
+    cursor: pointer;
+}
